@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GMIS House Spirit Animal Reveal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    gmis: {
+                        navy: '#0E2A47',
+                        gold: '#E1A948',
+                        lightBlue: '#D4E9F7',
+                        green: '#10B981',
+                        red: '#EF4444',
+                        blue: '#3B82F6'
+                    }
+                }
+            }
+        }
+    }
+</script>
+<style>
+    .reveal-animation {
+        animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.8); }
+        to { opacity: 1; transform: scale(1); }
+    }
+    .winner-glow {
+        box-shadow: 0 0 30px rgba(233, 169, 72, 0.7);
+        border: 3px solid #E1A948;
+    }
+</style>
+</head>
+<body class="bg-gmis-lightBlue text-gray-800">
+<!-- Header -->
+<header class="bg-gmis-navy text-white py-6 text-center">
+    <h1 class="text-3xl font-bold">GMIS House Spirit Animal Reveal</h1>
+    <p class="mt-2">The moment we've all been waiting for!</p>
+</header>
+
+<!-- Main Reveal Container -->
+<main class="container mx-auto px-4 py-12">
+    <!-- Predictive Analysis Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8 mb-12 reveal-animation">
+        <h2 class="text-2xl font-bold text-center mb-6">Predictive Voting Analysis</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Tagore House Prediction -->
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Tagore House</h3>
+                <div class="text-center">
+                    <div class="flex justify-between mb-2">
+                        <span>Peacock</span>
+                        <span class="font-bold text-blue-700">62%</span>
+                    </div>
+                    <div class="w-full bg-blue-200 rounded-full h-2.5 mb-4">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 62%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Tiger</span>
+                        <span class="font-bold text-blue-700">38%</span>
+                    </div>
+                    <div class="w-full bg-blue-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 38%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lincoln House Prediction -->
+            <div class="bg-green-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-green-700 mb-4">Lincoln House</h3>
+                <div class="text-center">
+                    <div class="flex justify-between mb-2">
+                        <span>Wolf</span>
+                        <span class="font-bold text-green-700">55%</span>
+                    </div>
+                    <div class="w-full bg-green-200 rounded-full h-2.5 mb-4">
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 55%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Elephant</span>
+                        <span class="font-bold text-green-700">45%</span>
+                    </div>
+                    <div class="w-full bg-green-200 rounded-full h-2.5">
+                        <div class="bg-green-600 h-2.5 rounded-full" style="width: 45%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kartini House Prediction -->
+            <div class="bg-yellow-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-yellow-700 mb-4">Kartini House</h3>
+                <div class="text-center">
+                    <div class="flex justify-between mb-2">
+                        <span>Bear</span>
+                        <span class="font-bold text-yellow-700">58%</span>
+                    </div>
+                    <div class="w-full bg-yellow-200 rounded-full h-2.5 mb-4">
+                        <div class="bg-yellow-600 h-2.5 rounded-full" style="width: 58%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Deer</span>
+                        <span class="font-bold text-yellow-700">42%</span>
+                    </div>
+                    <div class="w-full bg-yellow-200 rounded-full h-2.5">
+                        <div class="bg-yellow-600 h-2.5 rounded-full" style="width: 42%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tolstoy House Prediction -->
+            <div class="bg-red-50 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold text-red-700 mb-4">Tolstoy House</h3>
+                <div class="text-center">
+                    <div class="flex justify-between mb-2">
+                        <span>Lion</span>
+                        <span class="font-bold text-red-700">70%</span>
+                    </div>
+                    <div class="w-full bg-red-200 rounded-full h-2.5 mb-4">
+                        <div class="bg-red-600 h-2.5 rounded-full" style="width: 70%"></div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Dove</span>
+                        <span class="font-bold text-red-700">30%</span>
+                    </div>
+                    <div class="w-full bg-red-200 rounded-full h-2.5">
+                        <div class="bg-red-600 h-2.5 rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Reveal Section -->
+    <section class="bg-white rounded-xl shadow-lg p-8 reveal-animation">
+        <h2 class="text-3xl font-bold text-center mb-8">🏆 House Spirit Animals Revealed! 🏆</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Tagore House Reveal -->
+            <div class="bg-blue-100 p-6 rounded-lg text-center winner-glow">
+                <h3 class="text-xl font-semibold text-blue-700 mb-4">Tagore House</h3>
+                <img src="peacock.png" alt="Peacock" class="mx-auto w-48 h-48 object-contain mb-4">
+                <p class="font-bold text-blue-800">Peacock: Symbol of Wisdom</p>
+            </div>
+
+            <!-- Lincoln House Reveal -->
+            <div class="bg-green-100 p-6 rounded-lg text-center winner-glow">
+                <h3 class="text-xl font-semibold text-green-700 mb-4">Lincoln House</h3>
+                <img src="wolf.png" alt="Wolf" class="mx-auto w-48 h-48 object-contain mb-4">
+                <p class="font-bold text-green-800">Wolf: Symbol of Courage</p>
+            </div>
+
+            <!-- Kartini House Reveal -->
+            <div class="bg-yellow-100 p-6 rounded-lg text-center winner-glow">
+                <h3 class="text-xl font-semibold text-yellow-700 mb-4">Kartini House</h3>
+                <img src="bear.png" alt="Bear" class="mx-auto w-48 h-48 object-contain mb-4">
+                <p class="font-bold text-yellow-800">Bear: Symbol of Empowerment</p>
+            </div>
+
+            <!-- Tolstoy House Reveal -->
+            <div class="bg-red-100 p-6 rounded-lg text-center winner-glow">
+                <h3 class="text-xl font-semibold text-red-700 mb-4">Tolstoy House</h3>
+                <img src="lion.png" alt="Lion" class="mx-auto w-48 h-48 object-contain mb-4">
+                <p class="font-bold text-red-800">Lion: Symbol of Integrity</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voting Analysis Chart -->
+    <section class="bg-white rounded-xl shadow-lg p-8 mt-12 reveal-animation">
+        <h2 class="text-2xl font-bold text-center mb-6">Overall Voting Distribution</h2>
+        <canvas id="votingChart" class="w-full h-96"></canvas>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gmis-navy text-white py-6 text-center">
+    <p>© 2025 GMIS School House Spirit Vote. All rights reserved.</p>
+</footer>
+
+<script>
+    // Create Voting Distribution Chart
+    document.addEventListener('DOMContentLoaded', function() {
+        const ctx = document.getElementById('votingChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Peacock', 'Tiger', 'Wolf', 'Elephant', 'Bear', 'Deer', 'Lion', 'Dove'],
+                datasets: [{
+                    label: 'Voting Percentage',
+                    data: [62, 38, 55, 45, 58, 42, 70, 30],
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.6)',   // Peacock Blue
+                        'rgba(54, 162, 235, 0.3)',   // Tiger Blue
+                        'rgba(75, 192, 192, 0.6)',   // Wolf Green
+                        'rgba(75, 192, 192, 0.3)',   // Elephant Green
+                        'rgba(255, 206, 86, 0.6)',   // Bear Yellow
+                        'rgba(255, 206, 86, 0.3)',   // Deer Yellow
+                        'rgba(255, 99, 132, 0.6)',   // Lion Red
+                        'rgba(255, 99, 132, 0.3)'    // Dove Red
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Voting Percentage'
+                        }
+                    }
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
